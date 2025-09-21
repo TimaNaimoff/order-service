@@ -9,7 +9,5 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PhotoQualityDto {
-    private String urlForHighQualityVersionOfImage;
-    private String urlForLowQualityVersionOfImage;
+public class InstallmentButtonDto {
 }

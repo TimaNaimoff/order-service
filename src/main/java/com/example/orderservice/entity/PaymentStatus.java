@@ -1,10 +1,9 @@
 package com.example.orderservice.entity;
 
-public enum OrderStatus {
+public enum PaymentStatus {
     CREATED,
-    PAID,
-    SHIPPED,
-    DELIVERED,
+    PENDING,
+    SUCCESS,
+    FAILED,
     CANCELLED
 }
-

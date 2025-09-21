@@ -9,7 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PhotoQualityDto {
-    private String urlForHighQualityVersionOfImage;
-    private String urlForLowQualityVersionOfImage;
+public class DayScheduleInfoDto {
+    private String day;
+    private Boolean dayOff;
+    private String workingHours;
 }
