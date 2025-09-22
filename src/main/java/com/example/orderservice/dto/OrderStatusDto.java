@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderStatus {
+public class OrderStatusDto {
     private String title;
     private String value;
     private String textColor;

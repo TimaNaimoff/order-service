@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PaymentIntentionAction {
+public class PaymentIntentionActionDto {
     private Integer intentionId;
     private String type;
     private String title;

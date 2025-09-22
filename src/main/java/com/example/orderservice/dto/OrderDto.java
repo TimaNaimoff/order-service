@@ -1,12 +1,10 @@
 package com.example.orderservice.dto;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -30,7 +28,7 @@ public class OrderDto {
     private List<OrderItemDto> items;
     private OrderDiscountDto orderDiscountDto;
     private Boolean isManualPickup;
-    private List<PaymentIntentionAction> paymentIntentionActions;
+    private List<PaymentIntentionActionDto> paymentIntentionActionDtos;
     private Long id;
     private String paymentType;
     private String paymentProvider;
@@ -41,7 +39,7 @@ public class OrderDto {
     private String returnUrl;
     private String sign;
     private String status;
-    private OrderStatus orderStatus;
+    private OrderStatusDto orderStatusDto;
     private String cancellationAvailability;
     private BonusProgramDto usedPromoCode;
     private Integer originalDeliveryPrice;

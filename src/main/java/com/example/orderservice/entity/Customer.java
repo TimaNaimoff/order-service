@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -30,7 +31,6 @@ public class Customer {
     @Column(name = "sex" , nullable = false)
     private String sex;
     @Column(name = "birth_date" , nullable = false)
-    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
-    private String birthDate;
+    private LocalDate birthDate;
 
 }
