@@ -1,6 +1,6 @@
-package com.example.orderservice.repository;
+package com.example.orderservice.order.repository;
 
-import com.example.orderservice.entity.OrderItem;
+import com.example.orderservice.order.entity.OrderItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.math.BigDecimal;

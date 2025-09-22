@@ -1,8 +1,8 @@
-package com.example.orderservice.mapper;
+package com.example.orderservice.delivery.mapper;
 
 
-import com.example.orderservice.dto.ScheduleInfoDto;
-import com.example.orderservice.entity.ScheduleInfo;
+import com.example.orderservice.delivery.dto.ScheduleInfoDto;
+import com.example.orderservice.delivery.entity.ScheduleInfo;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

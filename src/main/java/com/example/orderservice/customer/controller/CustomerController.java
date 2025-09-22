@@ -1,4 +1,4 @@
-package com.example.orderservice.controller;
+package com.example.orderservice.customer.controller;
 
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Controller;

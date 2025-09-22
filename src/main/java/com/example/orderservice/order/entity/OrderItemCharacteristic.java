@@ -1,4 +1,4 @@
-package com.example.orderservice.entity;
+package com.example.orderservice.order.entity;
 
 import javax.persistence.*;
 import lombok.*;

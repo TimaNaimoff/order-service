@@ -1,4 +1,4 @@
-package com.example.orderservice.entity;
+package com.example.orderservice.customer.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;

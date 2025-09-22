@@ -1,7 +1,7 @@
-package com.example.orderservice.repository;
+package com.example.orderservice.order.repository;
 
-import com.example.orderservice.entity.Order;
-import com.example.orderservice.entity.OrderStatus;
+import com.example.orderservice.order.entity.Order;
+import com.example.orderservice.order.entity.OrderStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDateTime;

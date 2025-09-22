@@ -1,6 +1,6 @@
-package com.example.orderservice.repository;
+package com.example.orderservice.customer.repository;
 
-import com.example.orderservice.entity.Customer;
+import com.example.orderservice.customer.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

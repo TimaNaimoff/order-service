@@ -1,7 +1,7 @@
-package com.example.orderservice.entity;
+package com.example.orderservice.delivery.entity;
 
 
-import com.example.orderservice.dto.DayScheduleInfoDto;
+import com.example.orderservice.delivery.dto.DayScheduleInfoDto;
 import lombok.*;
 
 import javax.persistence.*;

@@ -1,7 +1,7 @@
-package com.example.orderservice.mapper;
+package com.example.orderservice.delivery.mapper;
 
-import com.example.orderservice.dto.DeliveryDto;
-import com.example.orderservice.entity.Delivery;
+import com.example.orderservice.delivery.dto.DeliveryDto;
+import com.example.orderservice.delivery.entity.Delivery;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

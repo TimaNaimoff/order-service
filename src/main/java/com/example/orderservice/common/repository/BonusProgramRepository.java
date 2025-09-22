@@ -1,6 +1,6 @@
-package com.example.orderservice.repository;
+package com.example.orderservice.common.repository;
 
-import com.example.orderservice.entity.BonusProgram;
+import com.example.orderservice.common.entity.BonusProgram;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

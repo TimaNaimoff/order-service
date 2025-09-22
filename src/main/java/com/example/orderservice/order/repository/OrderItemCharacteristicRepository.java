@@ -1,6 +1,6 @@
-package com.example.orderservice.repository;
+package com.example.orderservice.order.repository;
 
-import com.example.orderservice.entity.OrderItemCharacteristic;
+import com.example.orderservice.order.entity.OrderItemCharacteristic;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

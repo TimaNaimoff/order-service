@@ -1,12 +1,10 @@
-package com.example.orderservice.mapper;
+package com.example.orderservice.common.mapper;
 
 
-import com.example.orderservice.dto.PhotoDto;
-import com.example.orderservice.dto.ScheduleInfoDto;
-import com.example.orderservice.entity.Photo;
-import com.example.orderservice.entity.ScheduleInfo;
+
+import com.example.orderservice.common.dto.PhotoDto;
+import com.example.orderservice.common.entity.Photo;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 
 import java.util.List;
 

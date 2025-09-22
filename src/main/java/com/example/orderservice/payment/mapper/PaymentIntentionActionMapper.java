@@ -1,7 +1,7 @@
-package com.example.orderservice.mapper;
+package com.example.orderservice.payment.mapper;
 
-import com.example.orderservice.dto.PaymentIntentionActionDto;
-import com.example.orderservice.entity.PaymentIntentionAction;
+import com.example.orderservice.payment.dto.PaymentIntentionActionDto;
+import com.example.orderservice.payment.entity.PaymentIntentionAction;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

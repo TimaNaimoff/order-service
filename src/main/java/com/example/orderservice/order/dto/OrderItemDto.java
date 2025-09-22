@@ -1,4 +1,4 @@
-package com.example.orderservice.dto;
+package com.example.orderservice.order.dto;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 

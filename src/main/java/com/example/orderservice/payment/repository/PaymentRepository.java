@@ -1,7 +1,7 @@
-package com.example.orderservice.repository;
+package com.example.orderservice.payment.repository;
 
-import com.example.orderservice.entity.Payment;
-import com.example.orderservice.entity.PaymentStatus;
+import com.example.orderservice.payment.entity.Payment;
+import com.example.orderservice.payment.entity.PaymentStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.math.BigDecimal;

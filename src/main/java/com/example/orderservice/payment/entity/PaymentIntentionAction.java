@@ -1,6 +1,8 @@
-package com.example.orderservice.entity;
+package com.example.orderservice.payment.entity;
 
 import javax.persistence.*;
+
+import com.example.orderservice.order.entity.Order;
 import lombok.*;
 
 @Entity

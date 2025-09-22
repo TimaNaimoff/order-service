@@ -1,6 +1,6 @@
-package com.example.orderservice.repository;
+package com.example.orderservice.delivery.repository;
 
-import com.example.orderservice.entity.Delivery;
+import com.example.orderservice.delivery.entity.Delivery;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

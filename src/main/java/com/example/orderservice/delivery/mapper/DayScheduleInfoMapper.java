@@ -1,8 +1,8 @@
-package com.example.orderservice.mapper;
+package com.example.orderservice.delivery.mapper;
 
 
-import com.example.orderservice.dto.DayScheduleInfoDto;
-import com.example.orderservice.entity.DayScheduleInfo;
+import com.example.orderservice.delivery.dto.DayScheduleInfoDto;
+import com.example.orderservice.delivery.entity.DayScheduleInfo;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

@@ -1,6 +1,6 @@
-package com.example.orderservice.repository;
+package com.example.orderservice.order.repository;
 
-import com.example.orderservice.entity.OrderBundle;
+import com.example.orderservice.order.entity.OrderBundle;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

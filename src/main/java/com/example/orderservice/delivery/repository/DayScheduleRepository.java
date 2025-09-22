@@ -1,6 +1,6 @@
-package com.example.orderservice.repository;
+package com.example.orderservice.delivery.repository;
 
-import com.example.orderservice.entity.DayScheduleInfo;
+import com.example.orderservice.delivery.entity.DayScheduleInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
