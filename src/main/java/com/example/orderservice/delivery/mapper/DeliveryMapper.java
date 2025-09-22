@@ -6,6 +6,8 @@ import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
+import java.util.List;
+
 @Mapper(componentModel = "spring", uses = {ScheduleInfoMapper.class})
 public interface DeliveryMapper {
 
@@ -16,4 +18,6 @@ public interface DeliveryMapper {
     // dto -> entity (обратный маппинг берётся автоматически)
     @InheritInverseConfiguration
     Delivery toEntity(DeliveryDto dto);
+
+    List<DeliveryDto>toDtoList(List<Delivery>entities);
 }

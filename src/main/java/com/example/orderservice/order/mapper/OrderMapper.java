@@ -1,7 +1,11 @@
 package com.example.orderservice.order.mapper;
 
+import com.example.orderservice.common.mapper.BonusProgramMapper;
+import com.example.orderservice.customer.mapper.CustomerMapper;
+import com.example.orderservice.delivery.mapper.DeliveryMapper;
 import com.example.orderservice.order.dto.OrderDto;
 import com.example.orderservice.order.entity.Order;
+import com.example.orderservice.payment.mapper.PaymentIntentionActionMapper;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
