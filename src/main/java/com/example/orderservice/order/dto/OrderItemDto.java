@@ -1,4 +1,5 @@
 package com.example.orderservice.order.dto;
+import com.example.orderservice.common.dto.PhotoDto;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
@@ -27,7 +28,7 @@ public class OrderItemDto {
     private Double rating;
     private Integer skuId;
     private String status;
-    private StatusDto statusDto;
+    private OrderStatusDto statusDto;
     private String title;
     private Boolean isEditable;
     private LocalDateTime dateBought;

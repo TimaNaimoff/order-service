@@ -1,7 +1,7 @@
 package com.example.orderservice.order.dto.response;
 
-import com.example.orderservice.dto.response.ApiErrorResponse;
-import com.example.orderservice.dto.response.GenericResponseObject;
+
+import com.example.orderservice.order.dto.OrderDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

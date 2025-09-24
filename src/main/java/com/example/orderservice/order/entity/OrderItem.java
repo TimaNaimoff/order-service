@@ -1,6 +1,8 @@
 package com.example.orderservice.order.entity;
 
 import javax.persistence.*;
+
+import com.example.orderservice.common.entity.Photo;
 import lombok.*;
 
 import java.math.BigDecimal;

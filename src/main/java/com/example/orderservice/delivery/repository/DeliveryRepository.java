@@ -1,5 +1,6 @@
 package com.example.orderservice.delivery.repository;
 
+import com.example.orderservice.delivery.dto.DeliveryDto;
 import com.example.orderservice.delivery.entity.Delivery;
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -18,5 +19,4 @@ public interface DeliveryRepository extends JpaRepository<Delivery,Long> {
     boolean existsByDeliveryPointKey(String deliveryPointKey);
 
     List<Delivery> findAllByZoneId(Integer zoneId);
-
 }

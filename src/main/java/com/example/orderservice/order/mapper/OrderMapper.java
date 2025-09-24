@@ -6,9 +6,7 @@ import com.example.orderservice.delivery.mapper.DeliveryMapper;
 import com.example.orderservice.order.dto.OrderDto;
 import com.example.orderservice.order.entity.Order;
 import com.example.orderservice.payment.mapper.PaymentIntentionActionMapper;
-import org.mapstruct.InheritInverseConfiguration;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
+import org.mapstruct.*;
 
 @Mapper(
         componentModel = "spring",
@@ -29,6 +27,13 @@ public interface OrderMapper {
     OrderDto toDto(Order entity);
 
     @InheritInverseConfiguration
-    @Mapping(target = "payments", ignore = true) // ⚡ пока нет PaymentDto
+    @Mapping(target = "paymentIntentionActions", ignore = true)
+    @Mapping(target = "status", source = "status")              // явно указать
+    @Mapping(target = "orderStatus", source = "orderStatusDto") // через OrderStatusMapper
+    @Mapping(target = "paymentBlockTexts", source = "payment_block_texts")
     Order toEntity(OrderDto dto);
+
+    // обновление существующего Entity
+    @InheritConfiguration(name = "toEntity")
+    void updateEntity(OrderDto dto, @MappingTarget Order entity);
 }

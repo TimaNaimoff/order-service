@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 public class GenericResponseObject<T> {
     private T payload;
-    private List<ApiErrorResponse> errofs;
+    private List<ApiErrorResponse> errors;
     private String timestamp;
     private String trace;
     private String error;

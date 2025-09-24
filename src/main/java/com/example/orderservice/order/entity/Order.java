@@ -1,5 +1,9 @@
 package com.example.orderservice.order.entity;
 
+import com.example.orderservice.common.entity.BonusProgram;
+import com.example.orderservice.customer.entity.Customer;
+import com.example.orderservice.delivery.entity.Delivery;
+import com.example.orderservice.payment.entity.PaymentIntentionAction;
 import lombok.*;
 import javax.persistence.*;
 import java.time.LocalDateTime;

@@ -9,7 +9,9 @@ import com.example.orderservice.delivery.mapper.DeliveryMapper;
 import com.example.orderservice.delivery.repository.DayScheduleRepository;
 import com.example.orderservice.delivery.repository.DeliveryRepository;
 import com.example.orderservice.exception.DeliveryNotFoundException;
+import com.example.orderservice.exception.InvalidOrderException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,6 +21,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@Slf4j
 @RequiredArgsConstructor
 public class DeliveryService {
     private final DeliveryRepository deliveryRepository;
@@ -96,6 +99,20 @@ public class DeliveryService {
         return deliveryMapper.toDtoList(deliveries);
     }
 
+    @Transactional
+    public DeliveryDto assignDelivery(Long orderId, DeliveryDto deliveryDto) {
+        log.info("Assigning delivery to orderId={}, delivery={}", orderId, deliveryDto);
+
+        if (deliveryDto == null) {
+            throw new InvalidOrderException("Delivery info is required for orderId=" + orderId);
+        }
+
+        var delivery = deliveryMapper.toEntity(deliveryDto);
+        delivery.setId(orderId); // связь "доставка ↔ заказ"
+
+        var saved = deliveryRepository.save(delivery);
+        return deliveryMapper.toDto(saved);
+    }
 
 }
 
